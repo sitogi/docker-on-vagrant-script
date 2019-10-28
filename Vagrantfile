@@ -13,7 +13,7 @@ Vagrant.configure("2") do |config|
   config.vm.provision :shell, :path => "provision.sh"
 
   config.vm.provider "virtualbox" do |vm|
-    # メモリを1024MBに設定
+    # メモリを2048MBに設定
     vm.memory = 2048
   end
 
