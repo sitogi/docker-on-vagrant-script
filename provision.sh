@@ -20,3 +20,7 @@ chmod +x /usr/local/bin/docker-compose
 gpasswd -a vagrant docker
 systemctl restart docker
 
+# workaround for https://github.com/tmatilai/vagrant-proxyconf/issues/206
+mkdir -p /etc/systemd/system/docker.service.d
+touch /etc/systemd/system/docker.service.d/http-proxy.conf
+
