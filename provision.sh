@@ -24,11 +24,3 @@ systemctl restart docker
 mkdir -p /etc/systemd/system/docker.service.d
 touch /etc/systemd/system/docker.service.d/http-proxy.conf
 
-# install tmux 2.8 in CentOS 7
-curl https://gist.githubusercontent.com/pokev25/4b9516d32f4021d945a140df09bf1fde/raw/d7b391ab715890ab8312c8b2c59798e3b0852645/install-tmux.sh > install-tmux.sh
-chmod +x install-tmux.sh
-
-# install vim 8
-curl -L https://copr.fedorainfracloud.org/coprs/unixcommunity/vim/repo/epel-7/unixcommunity-vim-epel-7.repo -o /etc/yum.repos.d/unixcommunity-vim-epel-7.rep://copr.fedorainfracloud.org/coprs/unixcommunity/vim/repo/epel-7/unixcommunity-vim-epel-7.repo -o /etc/yum.repos.d/unixcommunity-vim-epel-7.repo
-yum install vim
-
